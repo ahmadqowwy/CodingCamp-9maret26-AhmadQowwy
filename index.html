@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Life Dashboard</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+<!-- GREETING -->
+<section id="greeting-section" class="component">
+
+<button id="theme-toggle" class="theme-toggle">
+<span class="theme-icon"></span>
+</button>
+
+<div id="time-display" class="time-display"></div>
+<div id="date-display" class="date-display"></div>
+
+<div id="greeting-message" class="greeting-message"></div>
+
+<input id="name-input" placeholder="Enter your name">
+<button onclick="saveName()" class="btn-primary">Save Name</button>
+
+</section>
+
+
+<!-- TASK -->
+<section id="task-section" class="component">
+
+<h2>Tasks</h2>
+
+<form id="task-form" class="task-form">
+
+<input id="task-input" type="text" placeholder="Add task" class="task-input">
+
+<button type="submit" class="btn-primary">Add</button>
+
+</form>
+
+<ul id="task-list" class="task-list"></ul>
+
+</section>
+
+
+<!-- TIMER -->
+<section id="timer-section" class="component">
+
+<h2>Focus Timer</h2>
+
+<div id="timer-display" class="timer-display">25:00</div>
+
+<input id="time-input" type="number" placeholder="Change minutes">
+
+<div class="timer-controls">
+
+<button id="timer-start" class="btn-timer">Start</button>
+<button id="timer-stop" class="btn-timer">Stop</button>
+<button id="timer-reset" class="btn-timer">Reset</button>
+<button onclick="changeTime()" class="btn-timer">Change Time</button>
+
+</div>
+
+</section>
+
+
+<!-- QUICK LINKS -->
+<section id="links-section" class="component">
+
+<h2>Quick Links</h2>
+
+<form id="link-form" class="link-form">
+
+<input id="link-input" type="url" placeholder="Add website URL" class="link-input">
+
+<button type="submit" class="btn-primary">Add</button>
+
+</form>
+
+<div id="links-container" class="links-container"></div>
+
+</section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
